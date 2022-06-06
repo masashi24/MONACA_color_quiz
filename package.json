@@ -1,0 +1,23 @@
+{
+    "name": "omikuji-fortune-teller",
+    "version": "3.0.0",
+    "displayName": "Omikuji Fortune Telling App",
+    "cordova": {
+        "plugins": {
+            "monaca-plugin-monaca-core": {},
+            "cordova-plugin-splashscreen": {}
+        }
+    },
+    "dependencies": {
+        "cordova-plugin-splashscreen": "6.0.0",
+        "monaca-plugin-monaca-core": "3.3.1"
+    },
+    "scripts": {
+        "monaca:preview": "npm run dev",
+        "dev": "browser-sync start -s www/ --watch --port 8080 --ui-port 8081"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.27.7",
+        "cordova": "^11.0.0"
+    }
+}

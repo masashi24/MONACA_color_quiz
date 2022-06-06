@@ -1,0 +1,195 @@
+/**/
+h2 {
+  padding: 1rem 2rem;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#fee140));
+  background-image: -webkit-linear-gradient(left, #fa709a 0%, #fee140 100%);
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.bgimage{
+    height: 100vh;
+    background-image: url("../images/omikuji-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box_mihon {
+    color:  white;                   /* 文字色指定 */
+    width:  70%;                  /* 幅指定 */
+    font-size: x-large;               /* 文字サイズ指定 */
+    background-color: blue;         /* 背景色指定 */
+    border: solid black 5px;
+    -webkit-text-stroke: 0.8px black;
+    text-align: center;
+}
+
+.box {
+    color:  white;                   /* 文字色指定 */
+    height: 7vh;                  /* 高さ指定 */
+    width:  16vw;                  /* 幅指定 */
+    font-size: x-large;               /* 文字サイズ指定 */
+    background-color: blue;         /* 背景色指定 */
+    border: solid black 5px;
+    -webkit-text-stroke: 0.8px black;
+    text-align: center;
+}
+
+#hako {
+    margin-top: 0%;
+    margin-left : 0;
+    margin-right : 0;
+}
+
+img {
+    width: 70%; 
+}
+
+#bottombar {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.comment {
+    padding: 0.5em 1em;
+    margin: 30px auto 20px;
+    position: relative;
+    text-align: center;
+    width: 80%;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    
+}
+.comment p {
+    margin: 0; 
+    padding: 0;
+    color:red;
+    font-size: large;
+}
+
+.page--loginpage__background{
+  background: #000f1d;
+  background-image: radial-gradient(#3a023b 13%, transparent 13%), radial-gradient(#003817 13%, transparent 13%);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+}
+
+/**********************************************************************/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn--yellow {
+  color: #000;
+  background-color: #fff100;
+  border-bottom: 5px solid #ccc100;
+}
+
+a.btn--yellow:hover {
+  margin-top: 3px;
+  color: #000;
+  background: #fff20a;
+  border-bottom: 2px solid #ccc100;
+}
+
+/**********************************************************************/
+.frame {
+ width: 80%;
+ margin: 30px auto 20px;
+ padding: 20px 10px 0;
+ border: 3px solid #aaa;
+ position: relative;
+ border-radius: 3px;
+ background-color: #fff;
+ text-align: center;
+ font-size: large;
+}
+.frame-title {
+ position: absolute;
+ top: 0;
+ left: 0;
+ padding: 0 5px;
+ background-color: #fff;
+}
+.frame-title .fa {
+ margin-right: 5px;
+}
+.caution {
+ background-color: #ff4500;
+ border: 2px solid #ff4500;
+ color: #fff;
+ border-radius: 3px;
+}
+.frame-red {
+ border-color: #ff4500;
+}
+
+/**********************************************************************/
+
+.slash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: x-large;
+}
+ 
+.slash::before,
+.slash::after {
+  content: "";
+  width: 25px;
+  height: 1px;
+  background-color: #000;
+  margin: 0px 4px 4px;
+}
+ 
+.slash::before {
+  transform: rotate(45deg);
+}
+ 
+.slash::after {
+  transform: rotate(-45deg);
+}

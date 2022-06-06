@@ -1,0 +1,82 @@
+<ons-page id="quiz-page" modifier="loginpage">
+
+    <template id="dialog.html">
+        <ons-dialog id="my-dialog">
+            <div id="caution" class="frame frame-red">
+                <div class="frame-title caution">
+                    <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>注意！！
+                </div>
+                <p>本当にいいんですね？？</p>
+            </div>
+            <div style="text-align: center;">
+                <div id="correctAns" style="display: none;"><p class="slash" style="color:red;">正解！</p></div>
+                <div id="wrongAns" style="display: none;"><p class="slash" style="color:blue;">不正解！</p></div>
+                <div id="comment" class="comment" style="display: none;"><p id="commentText"></p></div>
+                <p><ons-button id="finalAnswer" onclick="judgeAns()">ファイナルアンサー！！</ons-button></p>
+                <p><ons-button id="choseAgain" onclick="hideDialog('my-dialog')">選びなおさせて！</ons-button></p>
+                <div id="playAgain" style="display: none;"><p><ons-button onclick="re_playGame()">もう一回</ons-button></p></div>
+            </div>
+        </ons-dialog>
+    </template>
+
+    <center>
+        <h1 style="color:white;">見本と同じ色は？</h1>
+        <div class="box_mihon" style="width: 80%;" id="mondai" >見本</div>
+        <p></p>
+        <div id="hako">
+            <table id="mondaiTable" style="width: 80%;" border="1" cellspacing="0" cellpadding="1">
+                <tr>
+                <td><div class="box" id="mondai_1" onclick="selectAns(this)"></div></td>
+                <td><div class="box" id="mondai_2" onclick="selectAns(this)"></div></td>
+                <td><div class="box" id="mondai_3" onclick="selectAns(this)"></div></td>
+                <td><div class="box" id="mondai_4" onclick="selectAns(this)"></div></td>
+                <td><div class="box" id="mondai_5" onclick="selectAns(this)"></div></td>
+                </tr>
+                <tr>
+                <td><div class="box" id="mondai_6" onclick="selectAns(this)"></div></td>
+                <td><div class="box" id="mondai_7" onclick="selectAns(this)"></div></td>
+                <td><div class="box" id="mondai_8" onclick="selectAns(this)"></div></td>
+                <td><div class="box" id="mondai_9" onclick="selectAns(this)"></div></td>
+                <td><div class="box" id="mondai_10" onclick="selectAns(this)"></div></td>
+                </tr>
+                <tr>
+                <td><div class="box" id="mondai_11" onclick="selectAns(this)"></div></td>
+                <td><div class="box" id="mondai_12" onclick="selectAns(this)"></div></td>
+                <td><div class="box" id="mondai_13" onclick="selectAns(this)"></div></td>
+                <td><div class="box" id="mondai_14" onclick="selectAns(this)"></div></td>
+                <td><div class="box" id="mondai_15" onclick="selectAns(this)"></div></td>
+                </tr>
+                <tr>
+                <td><div class="box" id="mondai_16" onclick="selectAns(this)"></div></td>
+                <td><div class="box" id="mondai_17" onclick="selectAns(this)"></div></td>
+                <td><div class="box" id="mondai_18" onclick="selectAns(this)"></div></td>
+                <td><div class="box" id="mondai_19" onclick="selectAns(this)"></div></td>
+                <td><div class="box" id="mondai_20" onclick="selectAns(this)"></div></td>
+                </tr>
+                <tr>
+                <td><div class="box" id="mondai_21" onclick="selectAns(this)"></div></td>
+                <td><div class="box" id="mondai_22" onclick="selectAns(this)"></div></td>
+                <td><div class="box" id="mondai_23" onclick="selectAns(this)"></div></td>
+                <td><div class="box" id="mondai_24" onclick="selectAns(this)"></div></td>
+                <td><div class="box" id="mondai_25" onclick="selectAns(this)"></div></td>
+                </tr>
+                <tr>
+                <td><div class="box" id="mondai_26" onclick="selectAns(this)"></div></td>
+                <td><div class="box" id="mondai_27" onclick="selectAns(this)"></div></td>
+                <td><div class="box" id="mondai_28" onclick="selectAns(this)"></div></td>
+                <td><div class="box" id="mondai_29" onclick="selectAns(this)"></div></td>
+                <td><div class="box" id="mondai_30" onclick="selectAns(this)"></div></td>
+                </tr>
+            </table>
+        </div>
+    </center>
+    <div id="bottombar">
+        <a class="btn btn--yellow btn--cubic" onclick="showTemplateDialog()">回答する</a>
+        <p></p>
+        <ons-button modifier="large" onclick="initGame()">問題を変える</ons-button>
+        <p></p>
+        <ons-button modifier="large" onclick="backTitle()">タイトル</ons-button>
+        <p></p>
+    </div>
+
+</ons-page>
